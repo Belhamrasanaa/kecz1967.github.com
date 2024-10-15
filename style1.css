@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    animation: twinkling 2s infinite ease-in-out;
+}
+
+@keyframes twinkling {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+.Btn_add button {
+    background: linear-gradient(to right, #141E30, #243B55);
+    border: none;
+    padding: 15px 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.Btn_add button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.Btn_add {
+    text-decoration: none;
+}
+
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background: #000;
+    color: white;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tr:nth-child(even) {
+    background: linear-gradient(to right, #141E30, #243B55);
+}
+
+tr:nth-child(odd) {
+    background: #000;
+}
+
+tr:hover {
+    background: rgb(11, 25, 51);
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.actions button {
+    background: linear-gradient(to right, #141E30, #243B55);
+    border: 2px solid #fff;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actions button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.edit-btn {
+    border-color: #2ecc71;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    border-color: #c0392b;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.message {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.message-success {
+    color: #0f0;
+}
+
+.message-error {
+    color: #f00;
+}
